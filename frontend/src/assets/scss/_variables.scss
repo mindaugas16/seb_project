@@ -1,0 +1,56 @@
+@import "./src/assets/scss/_colors";
+// General colors
+
+$scheme-main: $white !default;
+$scheme-main-bis: $white-bis !default;
+$scheme-main-ter: $white-ter !default;
+$scheme-invert: $black !default;
+$scheme-invert-bis: $black-bis !default;
+$scheme-invert-ter: $black-ter !default;
+
+$background: $white-ter !default;
+
+$border: $grey-lighter !default;
+$border-hover: $grey-light !default;
+$border-light: $grey-lightest !default;
+$border-light-hover: $grey-light !default;
+
+// Text colors
+
+$text: $grey-dark !default;
+$text-light: $grey !default;
+$text-strong: $grey-darker !default;
+
+// Miscellaneous
+
+$easing: ease-out !default;
+$radius-small: 2px !default;
+$radius: 4px !default;
+$radius-large: 6px !default;
+$radius-rounded: 290486px !default;
+$speed: 86ms !default;
+
+// Link colors
+
+$link: $blue !default;
+$link-visited: $purple !default;
+
+$link-hover: $grey-darker !default;
+$link-hover-border: $grey-light !default;
+
+$link-focus: $grey-darker !default;
+$link-focus-border: $blue !default;
+
+$link-active: $grey-darker !default;
+$link-active-border: $grey-dark !default;
+
+// Responsive
+
+$mobile-xs-max-width: 359px;
+$mobile-max-width: 767px;
+
+$tablet-min-width: 768px;
+$tablet-max-width: 991px;
+
+$desktop-min-width: 992px;
+

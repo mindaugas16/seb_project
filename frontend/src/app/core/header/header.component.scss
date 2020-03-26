@@ -1,0 +1,11 @@
+@import "./src/assets/scss/variables";
+
+$header-height: 3.25rem !default;
+$header-z: 30 !default;
+
+.header {
+  background-color: $scheme-main;
+  min-height: $header-height;
+  position: relative;
+  z-index: $header-z;
+}
