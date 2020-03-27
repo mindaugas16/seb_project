@@ -14,7 +14,7 @@ app.use(errorHandler);
 app.use('/api', routes);
 
 mongoose
-    .connect(`mongodb://${process.env.MONGO_DB_ADDR}:${process.env.MONGO_DB_PORT}/project`, { useNewUrlParser: true, useUnifiedTopology: true })
+    .connect(`mongodb://localhost:27017/project`, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         const server = http.createServer(app);
 

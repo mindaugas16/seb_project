@@ -18,5 +18,7 @@ export class CustomErrorHandler implements ErrorHandler {
   imports: [BrowserModule, AppRoutingModule, CoreModule.forRoot()],
   providers: [{ provide: ErrorHandler, useClass: CustomErrorHandler }],
   bootstrap: [AppComponent],
+  exports: [
+  ],
 })
 export class AppModule {}

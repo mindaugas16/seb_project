@@ -1,56 +1,8 @@
-@import "./src/assets/scss/variables";
-
-$input-color: $text-strong;
-$input-focus-box-shadow-size: 0 0 0 0.125em;
-$input-focus-box-shadow-color: rgba($link, 0.25);
-
-input {
-  background-color: $scheme-main;
-  border-color: $border;
-  border-radius: $radius;
-  color: $input-color;
-
-  &::placeholder {
-    color: rgba($input-color, 0.3);
-  }
-
-  &:hover,
-  &.is-hovered {
-    border-color: $border-hover;
-  }
-
-  &:focus,
-  &.is-focused,
-  &:active,
-  &.is-active {
-    border-color: $link;
-    box-shadow: $input-focus-box-shadow-size $input-focus-box-shadow-color;
-  }
-}
-
-select {
-  @extend input;
-  cursor: pointer;
-  display: block;
-  font-size: 1em;
-  max-width: 100%;
-  outline: none;
-}
-
-.checkbox {
-  cursor: pointer;
-  display: inline-block;
-  line-height: 1.25;
-  position: relative;
-  input {
-    cursor: pointer;
-  }
-}
-
-.radio {
-  @extend .checkbox;
-
-  & + .radio {
-    margin-left: 0.5em;
+form.ng-submitted {
+  input,
+  select {
+    &.ng-invalid {
+      border: 1px solid red;
+    }
   }
 }

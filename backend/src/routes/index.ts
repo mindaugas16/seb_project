@@ -1,8 +1,8 @@
 import { Router } from 'express';
-import MainController from '../controllers/';
+import QuestionRouter from './question';
 
 const router = Router();
 
-router.use('/recommendation', MainController.recommendation);
+router.use('/question', QuestionRouter);
 
 export default router;

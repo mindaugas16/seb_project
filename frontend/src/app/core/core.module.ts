@@ -11,6 +11,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { RecommendationsModule } from '../recommendations/recommendations.module';
 import { ApiService } from './services/api.service';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const providers = [ApiService];
 
@@ -21,7 +22,7 @@ const providers = [ApiService];
     PageNotFoundComponent,
     NavbarComponent,
   ],
-  imports: [CommonModule, RecommendationsModule],
+  imports: [CommonModule, RecommendationsModule, HttpClientModule],
   exports: [FooterComponent, NavbarComponent],
   providers,
 })
